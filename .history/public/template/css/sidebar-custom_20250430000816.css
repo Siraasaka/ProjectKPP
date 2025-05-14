@@ -1,0 +1,21 @@
+#sidebar {
+    transition: all 0.3s ease;
+    width: 250px;
+    overflow: hidden;
+}
+
+#sidebar.collapsed {
+    width: 70px;
+}
+
+#sidebar .nav-link span,
+#toggleText {
+    transition: opacity 0.2s ease;
+}
+
+#sidebar.collapsed .nav-link span,
+#sidebar.collapsed #toggleText {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}

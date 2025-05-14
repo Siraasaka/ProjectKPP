@@ -1,0 +1,72 @@
+/* Anto's Table Styles */
+.table-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+thead th {
+    text-align: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+tbody td {
+    text-align: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #111827;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 25px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status.available {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.status.in-use {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status.service {
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

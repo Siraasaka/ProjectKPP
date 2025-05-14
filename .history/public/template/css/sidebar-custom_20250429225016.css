@@ -1,0 +1,13 @@
+/* ganti warna sidebar */
+.sidebar {
+    background-color: #dcdcdc !important;
+}
+
+#sidebar {
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+#sidebar.hidden {
+    margin-left: -250px;
+}

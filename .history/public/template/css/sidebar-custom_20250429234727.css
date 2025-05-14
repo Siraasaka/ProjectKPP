@@ -1,0 +1,53 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    /* z-index: 999; */
+}
+
+.sidebar.close {
+    width: 78px;
+}
+
+.sidebar .nav-text {
+    /* opacity: 1; */
+    transition: 0.3s;
+}
+
+.sidebar.close .nav-text {
+    /* opacity: 0; */
+    pointer-events: none;
+}
+
+.sidebar .toggle {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: rotate(180deg);
+}
+
+.sidebar.close .toggle {
+    transform: rotate(0deg);
+}
+
+.menu-links .nav-link {
+    color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.menu-links .nav-link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
